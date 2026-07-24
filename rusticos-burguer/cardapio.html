@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cardápio | Rústico's Burguer</title>
+
+    <meta name="description"
+        content="Conheça o cardápio completo da Rústico's Burguer. Hambúrgueres artesanais, porções, bebidas e sobremesas.">
+
+    <link rel="icon" href="assets/favicon.ico">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6b1a701c65.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<!-- LOADER -->
+
+<div id="loader">
+
+    <div class="loader-logo">
+
+        <img src="img/logo.png" alt="Logo">
+
+    </div>
+
+</div>
+
+<!-- BOTÃO TOPO -->
+
+<button id="topo">
+
+<i class="fas fa-arrow-up"></i>
+
+</button>
+
+<!-- WHATSAPP -->
+
+<a class="whatsapp-fixed"
+href="https://wa.me/551146621556"
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="container">
+
+<div class="logo">
+
+<a href="index.html">
+
+<img src="img/logo.png" alt="Logo">
+
+</a>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="sobre.html">Sobre</a></li>
+
+<li><a href="cardapio.html">Cardápio</a></li>
+
+<li><a href="galeria.html">Galeria</a></li>
+
+<li><a href="faq.html">FAQ</a></li>
+
+<li><a href="contato.html">Contato</a></li>
+
+</ul>
+
+</nav>
+
+<a href="#hamburgueres" class="btn-header">
+
+Escolher Pedido
+
+</a>
+
+<div id="menu-mobile">
+
+<i class="fas fa-bars"></i>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero hero-cardapio">
+
+<div class="overlay"></div>
+
+<div class="container hero-content">
+
+<span class="tag">
+
+🍔 Cardápio Artesanal
+
+</span>
+
+<h1>
+
+Escolha seu Hambúrguer Favorito
+
+</h1>
+
+<p>
+
+Monte seu pedido, adicione extras e envie tudo automaticamente para nosso WhatsApp.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- CATEGORIAS -->
+
+<section class="categorias">
+
+<div class="container">
+
+<div class="categoria-grid">
+
+<a href="#hamburgueres">
+
+<i class="fas fa-hamburger"></i>
+
+<span>Hambúrgueres</span>
+
+</a>
+
+<a href="#porcoes">
+
+<i class="fas fa-french-fries"></i>
+
+<span>Porções</span>
+
+</a>
+
+<a href="#bebidas">
+
+<i class="fas fa-glass-whiskey"></i>
+
+<span>Bebidas</span>
+
+</a>
+
+<a href="#sobremesas">
+
+<i class="fas fa-ice-cream"></i>
+
+<span>Sobremesas</span>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- HAMBÚRGUERES -->
+
+<section id="hamburgueres" class="destaques">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>Hambúrgueres</span>
+
+<h2>Os Mais Pedidos</h2>
+
+</div>
+
+<div class="cards">
+    <!-- FRALDINHA -->
+
+<div class="card">
+
+    <img src="img/burgers/fraldinha.jpg" alt="Fraldinha">
+
+    <h3>Hambúrguer de Fraldinha</h3>
+
+    <p>
+        Cheddar, bacon, maionese da casa,
+        alface, tomate e cebola roxa.
+    </p>
+
+    <strong>R$ 30,00</strong>
+
+    <button
+        class="btn-card add-cart"
+        data-id="1"
+        data-name="Hambúrguer Fraldinha"
+        data-price="30">
+
+        Adicionar ao Carrinho
+
+    </button>
+
+</div>
+
+<!-- LINGUIÇA -->
+
+<div class="card">
+
+    <img src="img/burgers/linguica.jpg" alt="Linguiça">
+
+    <h3>Hambúrguer de Linguiça</h3>
+
+    <p>
+        Mussarela, ovo, parmesão,
+        maionese especial, tomate,
+        cebola roxa.
+    </p>
+
+    <strong>R$ 25,00</strong>
+
+    <button
+        class="btn-card add-cart"
+        data-id="2"
+        data-name="Hambúrguer Linguiça"
+        data-price="25">
+
+        Adicionar ao Carrinho
+
+    </button>
+
+</div>
+
+<!-- FRANGO -->
+
+<div class="card">
+
+    <img src="img/burgers/frango.jpg" alt="Frango">
+
+    <h3>Hambúrguer de Frango</h3>
+
+    <p>
+
+        Catupiry, bacon,
+        pão com parmesão,
+        maionese, tomate
+        e cebola.
+
+    </p>
+
+    <strong>R$ 25,00</strong>
+
+    <button
+        class="btn-card add-cart"
+        data-id="3"
+        data-name="Hambúrguer Frango"
+        data-price="25">
+
+        Adicionar ao Carrinho
+
+    </button>
+
+</div>
+
+<!-- VEGANO -->
+
+<div class="card">
+
+    <img src="img/burgers/vegano.jpg" alt="Vegano">
+
+    <h3>Hambúrguer Vegano</h3>
+
+    <p>
+
+        Hambúrguer vegetal,
+        legumes frescos,
+        molho especial
+        e pão vegano.
+
+    </p>
+
+    <strong>R$ 30,00</strong>
+
+    <button
+        class="btn-card add-cart"
+        data-id="4"
+        data-name="Hambúrguer Vegano"
+        data-price="30">
+
+        Adicionar ao Carrinho
+
+    </button>
+
+</div>
+
+<!-- KIDS -->
+
+<div class="card">
+
+    <img src="img/burgers/kids.jpg" alt="Kids">
+
+    <h3>Hambúrguer Kids</h3>
+
+    <p>
+
+        Hambúrguer artesanal,
+        queijo, pão brioche
+        e batata.
+
+    </p>
+
+    <strong>R$ 19,00</strong>
+
+    <button
+        class="btn-card add-cart"
+        data-id="5"
+        data-name="Hambúrguer Kids"
+        data-price="19">
+
+        Adicionar ao Carrinho
+
+    </button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PORÇÕES -->
+
+<section id="porcoes" class="destaques">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>Porções</span>
+
+<h2>Acompanhamentos</h2>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="img/porcoes/batata.jpg" alt="Batata">
+
+<h3>Batata Rústica</h3>
+
+<p>
+
+Porção crocante preparada na hora.
+
+</p>
+
+<strong>R$ 18,00</strong>
+
+<button
+class="btn-card add-cart"
+data-id="20"
+data-name="Batata Rústica"
+data-price="18">
+
+Adicionar ao Carrinho
+
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="img/porcoes/aneis.jpg" alt="Anéis">
+
+<h3>Anéis de Cebola</h3>
+
+<p>
+
+Anéis empanados extremamente crocantes.
+
+</p>
+
+<strong>R$ 20,00</strong>
+
+<button
+class="btn-card add-cart"
+data-id="21"
+data-name="Anéis de Cebola"
+data-price="20">
+
+Adicionar ao Carrinho
+
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="img/porcoes/franguito.jpg" alt="Franguito">
+
+<h3>Franguito</h3>
+
+<p>
+
+Pedaços de frango empanados.
+
+</p>
+
+<strong>R$ 27,00</strong>
+
+<button
+class="btn-card add-cart"
+data-id="22"
+data-name="Franguito"
+data-price="27">
+
+Adicionar ao Carrinho
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- BEBIDAS -->
+
+<section id="bebidas" class="destaques">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Bebidas</span>
+
+            <h2>Para acompanhar seu pedido</h2>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <img src="img/bebidas/coca.jpg" alt="Coca-Cola">
+
+                <h3>Coca-Cola 350ml</h3>
+
+                <p>Gelada.</p>
+
+                <strong>R$ 7,00</strong>
+
+                <button class="btn-card add-cart"
+                    data-id="30"
+                    data-name="Coca-Cola 350ml"
+                    data-price="7">
+
+                    Adicionar ao Carrinho
+
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="img/bebidas/guarana.jpg" alt="Guaraná">
+
+                <h3>Guaraná 350ml</h3>
+
+                <p>Refrigerante gelado.</p>
+
+                <strong>R$ 7,00</strong>
+
+                <button class="btn-card add-cart"
+                    data-id="31"
+                    data-name="Guaraná 350ml"
+                    data-price="7">
+
+                    Adicionar ao Carrinho
+
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="img/bebidas/sprite.jpg" alt="Sprite">
+
+                <h3>Sprite 350ml</h3>
+
+                <p>Refrescante.</p>
+
+                <strong>R$ 7,00</strong>
+
+                <button class="btn-card add-cart"
+                    data-id="32"
+                    data-name="Sprite 350ml"
+                    data-price="7">
+
+                    Adicionar ao Carrinho
+
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="img/bebidas/heineken.jpg" alt="Heineken">
+
+                <h3>Heineken Long Neck</h3>
+
+                <p>Cerveja Long Neck.</p>
+
+                <strong>R$ 13,00</strong>
+
+                <button class="btn-card add-cart"
+                    data-id="33"
+                    data-name="Heineken Long Neck"
+                    data-price="13">
+
+                    Adicionar ao Carrinho
+
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img src="img/bebidas/agua.jpg" alt="Água">
+
+                <h3>Água com Gás</h3>
+
+                <p>500ml.</p>
+
+                <strong>R$ 5,00</strong>
+
+                <button class="btn-card add-cart"
+                    data-id="34"
+                    data-name="Água com Gás"
+                    data-price="5">
+
+                    Adicionar ao Carrinho
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SOBREMESAS -->
+
+<section id="sobremesas" class="destaques">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Sobremesas</span>
+
+            <h2>Finalize com chave de ouro</h2>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <img src="img/sobremesas/pudim.jpg" alt="Pudinzão">
+
+                <h3>Pudinzão</h3>
+
+                <p>Pudim artesanal 200ml.</p>
+
+                <strong>R$ 12,00</strong>
+
+                <button class="btn-card add-cart"
+                    data-id="40"
+                    data-name="Pudinzão"
+                    data-price="12">
+
+                    Adicionar ao Carrinho
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CARRINHO -->
+
+<aside class="cart-drawer" id="cartDrawer">
+
+    <div class="cart-header">
+
+        <h2>Meu Pedido</h2>
+
+        <span class="close-cart" id="closeCart">
+            <i class="fas fa-times"></i>
+        </span>
+
+    </div>
+
+    <div class="cart-items" id="cartItems">
+
+        <p>Seu carrinho está vazio.</p>
+
+    </div>
+
+    <div class="cart-total">
+
+        <h3>
+
+            Total
+
+            <span id="cartTotal">
+
+                R$ 0,00
+
+            </span>
+
+        </h3>
+
+        <button id="btnWhatsapp" class="btn-checkout">
+
+            <i class="fab fa-whatsapp"></i>
+
+            Finalizar Pedido
+
+        </button>
+
+    </div>
+
+</aside>
+
+<!-- BOTÃO ABRIR CARRINHO -->
+
+<button id="openCart" class="cart-floating">
+
+    <i class="fas fa-shopping-cart"></i>
+
+    <span id="cartCount">0</span>
+
+</button>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <img src="img/logo.png" class="footer-logo" alt="Logo">
+
+            <p>
+
+                Hambúrguer artesanal preparado com ingredientes selecionados.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Contato</h3>
+
+            <p>(11) 4662-1556</p>
+
+            <p>Rua Arlindo Luz, 33</p>
+            <p>Centro - Embu-Guaçu/SP</p>
+
+        </div>
+
+        <div>
+
+            <h3>Redes Sociais</h3>
+
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 Rústico's Burguer - Todos os direitos reservados.
+
+    </div>
+
+</footer>
+
+<!-- SCRIPTS -->
+
+<script src="js/script.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/whatsapp.js"></script>
+<!-- MODAL PERSONALIZAR LANCHE -->
+
+<div class="modal" id="productModal">
+
+    <div class="modal-content">
+
+        <h2 id="modalTitle">
+            Personalizar Hambúrguer
+        </h2>
+
+        <h3>Adicionais</h3>
+
+        <label>
+            <input type="checkbox" value="Bacon" data-price="5">
+            Bacon (+R$ 5,00)
+        </label>
+
+        <label>
+            <input type="checkbox" value="Ovo" data-price="3">
+            Ovo (+R$ 3,00)
+        </label>
+
+        <label>
+            <input type="checkbox" value="Queijo Extra" data-price="4">
+            Queijo Extra (+R$ 4,00)
+        </label>
+
+        <label>
+            <input type="checkbox" value="Hambúrguer Extra" data-price="12">
+            Hambúrguer Extra (+R$ 12,00)
+        </label>
+
+        <hr>
+
+        <h3>Molhos</h3>
+
+        <label>
+
+            <input type="radio"
+                name="molho"
+                value="Maionese Especial">
+
+            Maionese Especial
+
+        </label>
+
+        <label>
+
+            <input type="radio"
+                name="molho"
+                value="Big Mac Americano">
+
+            Big Mac Americano
+
+        </label>
+
+        <label>
+
+            <input type="radio"
+                name="molho"
+                value="Tasty Grill">
+
+            Tasty Grill
+
+        </label>
+
+        <label>
+
+            <input type="radio"
+                name="molho"
+                value="Sem Molho"
+                checked>
+
+            Sem Molho
+
+        </label>
+
+        <hr>
+
+        <h3>Observações</h3>
+
+        <textarea
+            id="observacao"
+            rows="4"
+            placeholder="Ex.: Sem cebola, carne ao ponto, etc."></textarea>
+
+        <div class="modal-footer">
+
+            <button
+                class="btn-outline"
+                id="cancelModal">
+
+                Cancelar
+
+            </button>
+
+            <button
+                class="btn-confirm"
+                id="confirmModal">
+
+                Adicionar ao Carrinho
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+
+</html>

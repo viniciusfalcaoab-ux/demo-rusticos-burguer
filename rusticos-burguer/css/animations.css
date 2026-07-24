@@ -1,0 +1,465 @@
+/*=========================================
+ANIMAÇÕES GERAIS
+=========================================*/
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(60px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes fadeDown{
+
+    from{
+        opacity:0;
+        transform:translateY(-60px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+@keyframes fadeLeft{
+
+    from{
+        opacity:0;
+        transform:translateX(-80px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+@keyframes fadeRight{
+
+    from{
+        opacity:0;
+        transform:translateX(80px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+@keyframes zoomIn{
+
+    from{
+        opacity:0;
+        transform:scale(.85);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+@keyframes zoomOut{
+
+    from{
+        transform:scale(1.08);
+    }
+
+    to{
+        transform:scale(1);
+    }
+
+}
+
+@keyframes rotateIn{
+
+    from{
+        opacity:0;
+        transform:rotate(-12deg) scale(.8);
+    }
+
+    to{
+        opacity:1;
+        transform:rotate(0deg) scale(1);
+    }
+
+}
+
+/*=========================================
+SCROLL REVEAL
+=========================================*/
+
+.reveal{
+
+    opacity:0;
+    transform:translateY(60px);
+    transition:1s;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
+
+.reveal-left{
+
+    opacity:0;
+    transform:translateX(-80px);
+    transition:1s;
+
+}
+
+.reveal-left.active{
+
+    opacity:1;
+    transform:translateX(0);
+
+}
+
+.reveal-right{
+
+    opacity:0;
+    transform:translateX(80px);
+    transition:1s;
+
+}
+
+.reveal-right.active{
+
+    opacity:1;
+    transform:translateX(0);
+
+}
+
+.reveal-zoom{
+
+    opacity:0;
+    transform:scale(.8);
+    transition:.9s;
+
+}
+
+.reveal-zoom.active{
+
+    opacity:1;
+    transform:scale(1);
+
+}
+
+/*=========================================
+BOTÕES
+=========================================*/
+
+.btn-primary,
+.btn-secondary,
+.btn-card,
+.btn-header{
+
+    transition:.35s ease;
+
+}
+
+.btn-primary:hover,
+.btn-card:hover,
+.btn-header:hover{
+
+    transform:translateY(-4px);
+    box-shadow:0 12px 25px rgba(199,154,59,.35);
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--primary);
+    color:#111;
+
+}
+
+/*=========================================
+CARDS
+=========================================*/
+
+.card{
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.45);
+
+}
+
+.cards-diferenciais .card:hover{
+
+    transform:translateY(-8px) scale(1.03);
+
+}
+
+/*=========================================
+IMAGENS
+=========================================*/
+
+.galeria-grid img{
+
+    transition:.45s;
+
+}
+
+.galeria-grid img:hover{
+
+    transform:scale(1.06);
+    filter:brightness(1.1);
+
+}
+
+.sobre-img img{
+
+    transition:.5s;
+
+}
+
+.sobre-img img:hover{
+
+    transform:scale(1.02);
+
+}
+
+/*=========================================
+MENU
+=========================================*/
+
+nav ul li a{
+
+    position:relative;
+
+}
+
+nav ul li a::after{
+
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    width:0%;
+    height:2px;
+    background:var(--primary);
+    transition:.3s;
+
+}
+
+nav ul li a:hover::after{
+
+    width:100%;
+
+}
+
+/*=========================================
+ÍCONE WHATSAPP
+=========================================*/
+
+.whatsapp-fixed{
+
+    animation:float 3s infinite;
+
+}
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================
+BOTÃO TOPO
+=========================================*/
+
+#topo:hover{
+
+    transform:translateY(-6px) rotate(360deg);
+
+}
+
+/*=========================================
+HERO
+=========================================*/
+
+.hero h1{
+
+    animation:fadeLeft .9s;
+
+}
+
+.hero p{
+
+    animation:fadeRight 1.2s;
+
+}
+
+.hero-buttons{
+
+    animation:fadeUp 1.4s;
+
+}
+
+/*=========================================
+ESTATÍSTICAS
+=========================================*/
+
+.stat{
+
+    transition:.35s;
+
+}
+
+.stat:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.stat:hover h2{
+
+    color:#ffd36a;
+
+}
+
+/*=========================================
+FAQ
+=========================================*/
+
+.faq-item{
+
+    transition:.3s;
+
+}
+
+.faq-item:hover{
+
+    transform:translateX(5px);
+
+}
+
+/*=========================================
+FOOTER
+=========================================*/
+
+footer a{
+
+    transition:.3s;
+
+}
+
+footer a:hover{
+
+    color:var(--primary);
+
+}
+
+/*=========================================
+TOAST
+=========================================*/
+
+.toast.show{
+
+    animation:toastSlide .5s;
+
+}
+
+@keyframes toastSlide{
+
+    from{
+
+        transform:translateX(450px);
+
+    }
+
+    to{
+
+        transform:translateX(0);
+
+    }
+
+}
+
+/*=========================================
+LOADER
+=========================================*/
+
+.loader-logo{
+
+    animation:zoomIn 1.2s infinite alternate;
+
+}
+
+/*=========================================
+DRAWER DO CARRINHO
+=========================================*/
+
+.cart-drawer{
+
+    transition:.4s ease;
+
+}
+
+.cart-item{
+
+    animation:fadeIn .4s;
+
+}
+
+/*=========================================
+MODAL
+=========================================*/
+
+.modal.active .modal-content{
+
+    animation:zoomIn .35s;
+
+}
